@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ennfinity Skin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #444;
+        }
+        header {
+            background-color: #fff;
+            color: #b8860b;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding: 10px 0;
+            border-top: 1px solid #b8860b;
+        }
+        nav a {
+            text-decoration: none;
+            color: #b8860b;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .testimonial-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #b8860b;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .testimonial:last-child {
+            border-bottom: none;
+        }
+        .testimonial img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #d4af37;
+        }
+        .testimonial-text {
+            max-width: 800px;
+        }
+        .testimonial-text h3 {
+            margin: 0 0 10px;
+            color: #d4af37;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .testimonial-text p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #5c4033;
+        }
+        footer {
+            background-color: #b8860b;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .testimonial {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: center;
+            }
+            .testimonial img {
+                width: 100px;
+                height: 100px;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .testimonial-text h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ennfinity Skin</h1>
+        <b> Where Every Skin Story Matters</b>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Testimonials.html">Testimonials</a>
+        <a href="">Book appointment</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <section id="testimonials" class="testimonial-section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <img src="t1.jpg" alt="Client 1 - glowing skin" loading="lazy">
+            <div class="testimonial-text">
+                <h3>Client 1</h3>
+                <p>"The results were beyond my expectations. My skin feels rejuvenated and glowing!"</p>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <img src="t2.jpg" alt="Client 2 - professional care" loading="lazy">
+            <div class="testimonial-text">
+                <h3>Client 2</h3>
+                <p>"Dr. Ennakshee provided excellent care and the treatments worked wonders for my skin!"</p>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <img src="t3.jpg" alt="Client 3 - satisfied with results" loading="lazy">
+            <div class="testimonial-text">
+                <h3>Client 3</h3>
+                <p>"Highly professional and effective. I would recommend Ennfinity Skin to everyone."</p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about">
+            <h2>About Us</h2>
+            <p>Welcome to Ennfinity Skin, where your skin health is our top priority. At our state-of-the-art dermatology clinic, we are committed to providing a range of cutting-edge Clinical and Cosmetic Dermatological solutions tailored to your unique needs.</p>
+            <p>We address a wide range of skin concerns, including diagnosing and treating disorders related to the skin, hair, nails, and mucous membranes. We combine expert medical care with advanced aesthetic treatments to address all your skin concerns. Whether you're seeking solutions for acne, eczema, aging, pigmentation, or looking to enhance your natural beauty with non-invasive procedures like Botox or dermal fillers, we have the expertise and solutions you need.</p>
+        </div>
+    </section>
+
+    <section id="doctor">
+        <div class="doctor-info">
+            <h2>About Dr. Ennakshee</h2>
+            <p>Dr. Ennakshee (MBBS, MD Dermatology) is a highly skilled and compassionate dermatologist with a deep passion for skin care. She offers both clinical and aesthetic dermatology services to address a wide range of skin concerns, from medical conditions like acne, eczema, and psoriasis to cosmetic procedures like Peels, Botox, threads, and fillers.</p>
+            <p>With extensive training and experience, Dr. Ennakshee combines advanced techniques with personalized care to help her patients achieve healthy, glowing skin. Her commitment to staying up-to-date with the latest dermatological advancements ensures that each patient receives the best possible treatment.</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Contact us
+            <br>
+            9086278370
+            <br>
+            ennfinity.skin@gmail.com
+            <br>
+            Location
+            <br>
+            300, Near Gurudwara, Opposite Tawi Lab, Bakshi Nagar,JAMMU</p>
+    </footer>
+</body>
+</html>
+
