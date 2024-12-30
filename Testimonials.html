@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ennfinity Skin</title>
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #fff;
-            color: #444;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
         }
         header {
             background-color: #fff;
-            color: #b8860b;
             padding: 20px 0;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid #b8860b;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
         }
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            color: #b8860b;
         }
-        header p {
+        header b {
+            display: block;
+            margin: 10px 0;
             font-size: 1.2rem;
-            margin-top: 5px;
         }
         nav {
             display: flex;
