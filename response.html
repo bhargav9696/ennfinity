@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url(r3x.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            background-color: rgba(184, 134, 11, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .form-container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #b8860b;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f9fafb;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #b8860b;
+            outline: none;
+            box-shadow: 0 0 4px rgba(184, 134, 11, 0.5);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .file-upload {
+            border: 2px dashed #b8860b;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: #f9fafb;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .file-upload:hover {
+            background-color: #fffbe6;
+        }
+
+        .file-upload input[type="file"] {
+            display: none;
+        }
+
+        .file-upload span {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #b8860b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a67508;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .form-footer a {
+            color: #b8860b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Response Form</h1>
+    </header>
+    <div class="form-container">
+        <h2>Where Every Skin Story Matters</h2>
+        <h2>Share Your Story With Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="613ac480-f4f3-4f6f-b7e4-313e5072c744">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="response">Your Response:</label>
+                <textarea id="response" name="response" placeholder="Write your response here..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">How would you rate your experience?</label>
+                <select id="rating" name="rating" required>
+                    <option value="">-- Select --</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+            </div>
+
+
+
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+        <div class="form-footer">
+            <p>Need help? <a href="contact.html">Contact us</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
