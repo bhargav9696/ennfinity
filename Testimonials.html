@@ -87,16 +87,61 @@
             font-size: 1.1rem;
             color: #5c4033;
         }
-        footer {
-            background-color: #b8860b;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        footer p {
-            margin: 0;
-            font-size: 1rem;
-        }
+    footer {
+        background-color: #b8860b;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    footer .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    footer .footer-column {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    footer .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    footer .footer-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .footer-column ul li {
+        margin: 5px 0;
+    }
+
+    footer .footer-column ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+    }
+
+    footer .footer-column ul li a:hover {
+        color: #f0e68c;
+    }
+
+    footer p {
+        text-align: center;
+        margin: 20px 0 0;
+        font-size: 1rem;
+    }
+
+
         /* Responsive design */
         @media (max-width: 768px) {
             .testimonial {
@@ -119,14 +164,15 @@
 </head>
 <body>
     <header>
+        <img src="logo.jpg" alt="Ennfinity Skin Logo">
         <h1>Ennfinity Skin</h1>
-        <b> Where Every Skin Story Matters</b>
+        <b>Where Every Skin Story Matters</b>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="Testimonials.html">Testimonials</a>
-        <a href="">Book appointment</a>
+        <a href="Testimonials.html">Results</a>
+        <a href="appointment.html">Appointment</a>
         <a href="contact.html">Contact</a>
 
     </nav>
@@ -134,14 +180,13 @@
 
 
     <section id="testimonials" class="testimonial-section">
-        <h2>What Our Clients Say</h2>
+        <h2>Ennfinity Results</h2>
 
 
         <div class="testimonial">
             <img src="t1.jpg" alt="Client 1 - glowing skin" loading="lazy">
             <div class="testimonial-text">
                 <h3>Client 1</h3>
-                <p>"The results were beyond my expectations. My skin feels rejuvenated and glowing!"</p>
             </div>
         </div>
 
@@ -149,7 +194,6 @@
             <img src="t2.jpg" alt="Client 2 - professional care" loading="lazy">
             <div class="testimonial-text">
                 <h3>Client 2</h3>
-                <p>"Dr. Ennakshee provided excellent care and the treatments worked wonders for my skin!"</p>
             </div>
         </div>
 
@@ -157,9 +201,34 @@
             <img src="t3.jpg" alt="Client 3 - satisfied with results" loading="lazy">
             <div class="testimonial-text">
                 <h3>Client 3</h3>
-                <p>"Highly professional and effective. I would recommend Ennfinity Skin to everyone."</p>
             </div>
         </div>
+        <div class="testimonial">
+            <img src="t4.jpg" alt="Client 3 - satisfied with results" loading="lazy">
+            <div class="testimonial-text">
+                <h3>Client 4</h3>
+
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="t5.jpg" alt="Client 3 - satisfied with results" loading="lazy">
+            <div class="testimonial-text">
+                <h3>Client6</h3>
+            </div>
+        </div>
+        <h2>Ennfinity Testimonials</h2>
+        <div class="testimonial">
+            <img src="tt1.jpg" alt="Client 3 - satisfied with results" loading="lazy">
+            <div class="testimonial-text">
+                <h3>Client1</h3>
+                <p>
+                    "Dr. Ennakshee, I want to thank you from the bottom of my heart because of you, my face is 90% clear now. For the past 3 months, I've been receiving
+                    compliments, and I've been struggling with acne and scarring for almost 6 years, but now it's almost gone. Only a couple of spots are left. Thank you so much! My internship is ongoing, which is why I've been out of Jammu for the past 4-5 months and haven't been able to visit the clinic again, but I really wanted to come and say thank you in person because now I can confidently go out without makeup."
+                    Vanshika, 22
+                    @ennfinityskin</p>
+            </div>
+        </div>
+
     </section>
     <section id="about">
         <div class="about">
@@ -186,7 +255,7 @@
         <div class="footer-column">
             <h3>Contact Us</h3>
             <ul>
-                <li>Phone: <a href="6006500501"></a></li>
+                <li>Phone: <a href="6006500501"> 6006500501</a></li>
                 <li>Email: <a href="">ennfinity.skin@gmail.com</a></li>
             </ul>
         </div>
