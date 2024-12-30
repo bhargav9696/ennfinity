@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url(photoi.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            background-color: rgba(184, 134, 11, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #b8860b;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #b8860b;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f9fafb;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #b8860b;
+            outline: none;
+            box-shadow: 0 0 4px rgba(184, 134, 11, 0.5);
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #b8860b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a67508;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .form-footer a {
+            color: #b8860b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book an Appointment</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Testimonials.html">Results</a>
+        <a href="response.html">Review</a>
+        <a href="contact.html">Contact</a>
+        <a href="appointment.html">Appointment</a>
+    </nav>
+    <div class="form-container">
+        <h2>Schedule Your Visit</h2>
+        <form action="submit_appointment.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="">-- Select --</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="not-say">Rather Not Say</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time Slot:</label>
+                <select id="time" name="time" required>
+                    <option value="">-- Select --</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="referral">How did you hear about us?</label>
+                <select id="referral" name="referral">
+                    <option value="">-- Select --</option>
+                    <option value="google">Google</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="friend">Friend/Family</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" placeholder="Any specific concerns or preferences?" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div class="form-footer">
+            <p>Need help? <a href="contact.html">Contact us</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
