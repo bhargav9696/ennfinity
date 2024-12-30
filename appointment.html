@@ -155,7 +155,8 @@
     </nav>
     <div class="form-container">
         <h2>Schedule Your Visit</h2>
-        <form action="submit_appointment.php" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="613ac480-f4f3-4f6f-b7e4-313e5072c744">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
